@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const Product = (props) => {
-console.log(props.product);
+//console.log(props);
    
    const {img,name,seller,price,stock,key} =props.product;
    return (
@@ -21,11 +21,10 @@ console.log(props.product);
                  <p> <small>by:{seller}</small></p>
                  <p>${price}</p>
                  <p> <small> only {stock} left in stock - Order soon</small></p>
-                 <button 
+                 {props.showAddToCard && <button 
                   className ="btn-main"
                   onClick ={() => props.handlerAdd(props.product)} >
-                     <FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon> add to cart</button>
-
+                     <FontAwesomeIcon icon={faShoppingCart}> </FontAwesomeIcon> add to cart</button>}
             </div>
 
       

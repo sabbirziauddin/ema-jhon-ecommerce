@@ -33,10 +33,8 @@ function App() {
           <Route exact  path="/" >
             <Shop></Shop>
           </Route>
-          <Route path="/product:productKey">
-
-          <ProductDetails></ProductDetails>
-          
+          <Route path="/product/:productKey">
+            <ProductDetails></ProductDetails>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

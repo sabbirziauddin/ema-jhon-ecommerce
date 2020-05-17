@@ -16,14 +16,14 @@ const Shop = () => {
            // console.log("product added",product);
             const newCart = [...cart,product];
             setCart(newCart);
-            const sameProduct =newCart.filter(pd =>pd.key===product.key);
+            const sameProduct =newCart.filter(pd =>pd.key===product.key); //for local storage product count
             const count = sameProduct.length;
             addToDatabaseCart(product.key,count);
           } 
    return (
    
 
-      <div className="shop-container">
+      <div className="twin-container">
           <div className="product-container">
                
                   {

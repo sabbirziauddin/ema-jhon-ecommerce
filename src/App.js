@@ -24,13 +24,13 @@ function App() {
             <Shop></Shop>
           
           </Route>
-          <Route path="/review">
+          <Route  path="/review">
             <Review></Review>
           </Route>
-          <Route path="/inventory">
+          <Route  path="/inventory">
             <Inventory></Inventory>
           </Route>
-          <Route exact  path="/" >
+          <Route exact path="/" >
             <Shop></Shop>
           </Route>
           <Route path="/product/:productKey">
